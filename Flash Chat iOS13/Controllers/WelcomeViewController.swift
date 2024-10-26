@@ -8,7 +8,7 @@
 
 import UIKit
 import CLTypingLabel
-
+import Firebase
 class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: CLTypingLabel!
