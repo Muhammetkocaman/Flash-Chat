@@ -18,14 +18,25 @@
                 <rect key="frame" x="0.0" y="0.0" width="374" height="70"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oer-oc-C5L">
+                    <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oer-oc-C5L">
                         <rect key="frame" x="10" y="10" width="354" height="50"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YouAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="uoi-of-Ics">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="40" id="Bot-B3-9gI"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="Fx8-Ie-bu7"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Pzk-q2-B3Q"/>
+                                    <constraint firstAttribute="width" constant="40" id="ZfW-Qb-szB"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="aor-wQ-8hQ"/>
+                                    <constraint firstAttribute="height" constant="40" id="lY0-Xd-m17"/>
+                                </constraints>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="73y-D6-VUG">
-                                <rect key="frame" x="0.0" y="0.0" width="294" height="50"/>
+                                <rect key="frame" x="60" y="0.0" width="234" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryn-ch-7Kk">
-                                        <rect key="frame" x="10" y="10" width="274" height="30"/>
+                                        <rect key="frame" x="10" y="10" width="214" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="BrandLightPurple"/>
                                         <nil key="highlightedColor"/>
@@ -59,6 +70,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="label" destination="ryn-ch-7Kk" id="l3c-NQ-t0t"/>
+                <outlet property="leftImageView" destination="uoi-of-Ics" id="Cvy-Mz-kuo"/>
                 <outlet property="messageBubble" destination="73y-D6-VUG" id="OBG-5K-nhs"/>
                 <outlet property="rightImageView" destination="kL7-MY-qGH" id="7lT-8z-9kd"/>
             </connections>
@@ -67,8 +79,9 @@
     </objects>
     <resources>
         <image name="MeAvatar" width="36" height="36"/>
+        <image name="YouAvatar" width="36" height="36"/>
         <namedColor name="BrandLightPurple">
-            <color red="0.98000001907348633" green="0.9649999737739563" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.98000001907348633" green="0.52037131786346436" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
